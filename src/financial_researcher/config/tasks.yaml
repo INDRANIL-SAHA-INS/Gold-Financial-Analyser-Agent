@@ -1,0 +1,72 @@
+research_task:
+  description: >
+    Using the Gold Market Research Tool, conduct comprehensive research on the following aspects:
+    1. Current gold prices and recent price movements
+    2. Major market events affecting gold prices
+    3. Central bank gold purchasing activities
+    4. Geopolitical factors influencing gold markets
+    5. Industry expert predictions and analysis
+    6. Technical indicators and chart patterns
+    7. Market sentiment indicators
+    8. Correlation with other assets (USD, stocks, crypto)
+    Make sure to gather data from multiple reliable sources and focus on latest trends.
+  expected_output: >
+    A detailed research compilation including:
+    - Current gold market conditions and price levels
+    - Key market moving events and their impact
+    - Expert opinions and market sentiment
+    - Technical and fundamental analysis data
+    - Relevant economic indicators affecting gold
+    All information should be properly sourced and timestamped.
+  agent: researcher
+
+reporting_task:
+  description: >
+    Analyze the collected gold market data to:
+    1. Identify major price trends and patterns
+    2. Evaluate market sentiment and positioning
+    3. Assess impact of economic indicators
+    4. Compare current trends with historical patterns
+    5. Analyze supply-demand dynamics
+    6. Evaluate institutional investor positioning
+    7. Create price movement projections
+    Generate insights that could affect future gold price movements.
+  expected_output: >
+    A comprehensive analysis report containing:
+    - Trend analysis with supporting data
+    - Market sentiment evaluation
+    - Supply-demand analysis
+    - Technical analysis with chart patterns
+    - Correlation analysis with other markets
+    - Risk assessment
+    Formatted in clear sections with supporting data points.
+  agent: reporting_analyst
+  context:
+    - research_task
+
+writing_task:
+  description: >
+    Create a professional gold market analysis report that:
+    1. Summarizes key findings in clear, actionable terms
+    2. Explains complex market dynamics in accessible language
+    3. Highlights critical market indicators and their implications
+    4. Provides well-reasoned market outlook
+    5. Includes relevant charts and data visualizations
+    Focus on making the information actionable for investors.
+  expected_output: >
+    A polished, professional report containing:
+    - Executive Summary
+    - Current Market Overview
+    - Technical Analysis
+    - Fundamental Factors
+    - Market Sentiment Analysis
+    - Supply-Demand Dynamics
+    - Risk Factors
+    - Market Outlook
+    - Actionable Insights
+    Formatted in clean markdown with proper sections and emphasis on key points.
+  agent: writer
+  context:
+    - research_task
+    - reporting_task
+  
