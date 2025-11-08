@@ -98,6 +98,77 @@ An intelligent AI-powered system for comprehensive gold market analysis, built u
 3. **View Results**
    - Find the generated report in `financial_report_{timestamp}.md`
 
+## Sample Outputs
+
+### Terminal Execution
+```
+🚀 Starting Financial Researcher Crew...
+
+╭──────────────── Crew Execution Started ─────────────────╮
+│                                                         │
+│  Crew Execution Started                                 │
+│  Name: crew                                            │
+│                                                        │
+╰─────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: research_task
+    Status: Executing Task...
+```
+
+### Generated Reports
+You can find example outputs in:
+- [`financial_report.md`](financial_report.md) - Latest analysis report
+- [`financial_report_20251108_142057.md`](financial_report_20251108_142057.md) - Timestamped report example
+
+### Sample Report Sections
+![Report Structure](docs/images/report_structure.png)
+
+#### Key Sections Include:
+- Executive Summary
+- Current Market Overview
+- Technical Analysis
+- Fundamental Factors
+- Market Sentiment Analysis
+- Supply-Demand Dynamics
+- Risk Factors
+- Market Outlook
+- Actionable Insights
+
+### Analysis Process
+
+#### 1. Data Collection Workflow
+![Data Collection Process](docs/images/workflow1.png)
+- Market Intelligence Specialist initialization
+- Serper API integration
+- Real-time gold market data gathering
+- Historical price data collection
+- Expert opinion aggregation
+
+#### 2. Analysis Pipeline
+![Analysis Pipeline](docs/images/workflow2.png)
+- Raw data processing
+- Technical indicator calculation
+- Pattern recognition
+- Sentiment analysis
+- Correlation studies with other assets
+
+#### 3. Expert Analysis Process
+![Expert Analysis](docs/images/workflow3.png)
+- Trend identification
+- Market sentiment evaluation
+- Supply-demand analysis
+- Risk factor assessment
+- Future projection modeling
+
+#### 4. Report Generation Pipeline
+![Report Generation](docs/images/workflow4.png)
+- Data synthesis
+- Key findings extraction
+- Report structuring
+- Recommendation formulation
+- Final document compilation
+
 ## Project Structure
 
 ```
